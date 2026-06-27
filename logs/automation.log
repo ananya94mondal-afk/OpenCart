@@ -1,0 +1,615 @@
+2026-06-26 15:56:00.659 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 15:56:00.913 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:08:51.918 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:08:52.159 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:08:58.299 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:08:58.331 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:08:58.499 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:08:59.152 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:08:59.593 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:09:00.744 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 848)
+  (Session info: chrome=149.0.7827.116)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [219afa87f4613b71897c2007f0c68e5d, clickElement {id=f.F16E74F2623E59975D8BBC29DF077505.d.53E7B9F85A6C511B3F769DA4E278B1E4.e.103}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49237}, goog:processID: 26272, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49237/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (219afa87f4613b71897c2007f0c68e5d)] -> xpath: //button[normalize-space()='Continue']]
+Session ID: 219afa87f4613b71897c2007f0c68e5d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.AccountRegistrationPage.clickContinue(AccountRegistrationPage.java:83)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:09:03.202 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:09:03.202 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:09:03.354 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:09:03.854 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:09:04.196 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:10:14.484 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:10:14.724 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:10:17.185 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:10:17.214 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:10:17.423 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:10:17.848 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:10:18.376 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:10:19.518 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 840)
+  (Session info: chrome=149.0.7827.116)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da7190741d368cbc2269994e7a04ab79, clickElement {id=f.7C3CF1B5FA17F282400AECFA57C5BE5A.d.0C92A521F1BAA111119D4CE6261B5A57.e.98}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58836}, goog:processID: 26352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58836/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (da7190741d368cbc2269994e7a04ab79)] -> xpath: //button[normalize-space()='Continue']]
+Session ID: da7190741d368cbc2269994e7a04ab79
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.AccountRegistrationPage.clickContinue(AccountRegistrationPage.java:83)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:10:21.951 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:10:21.951 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:10:22.138 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:10:22.678 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:10:23.303 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:11:43.032 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:11:43.275 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:11:45.599 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:11:45.630 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:11:45.808 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:11:46.295 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:11:46.915 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:11:48.056 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 854)
+  (Session info: chrome=149.0.7827.116)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [292a390dc06636c839d1b5b256c70c17, clickElement {id=f.4233F3363C8DEE3520164486422D09C4.d.887985189C4818E9668CA89D9CF3D87A.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56378}, goog:processID: 7724, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56378/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (292a390dc06636c839d1b5b256c70c17)] -> xpath: //button[normalize-space()='Continue']]
+Session ID: 292a390dc06636c839d1b5b256c70c17
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.AccountRegistrationPage.clickContinue(AccountRegistrationPage.java:84)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:11:50.540 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:11:50.540 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:11:50.716 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:11:51.295 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:11:51.804 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:12:44.676 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:12:44.911 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:12:47.324 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:12:47.356 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:12:47.534 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:12:48.155 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:12:48.557 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:12:49.697 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 816)
+  (Session info: chrome=149.0.7827.116)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c99bcc176b0cc709517a63a5c5fd2506, clickElement {id=f.4C469BA20792621DC4A70704DC7FFF34.d.50D4F0156E165FB7A0CB1AAECF438E06.e.102}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56014}, goog:processID: 4348, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56014/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c99bcc176b0cc709517a63a5c5fd2506)] -> xpath: //button[normalize-space()='Continue']]
+Session ID: c99bcc176b0cc709517a63a5c5fd2506
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.AccountRegistrationPage.clickContinue(AccountRegistrationPage.java:84)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:12:52.157 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:12:52.157 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:12:52.313 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:12:52.843 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:12:53.263 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:16:04.042 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:16:04.278 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:16:06.693 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:16:06.716 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:16:06.930 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:16:07.365 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:16:07.910 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:16:09.046 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 794)
+  (Session info: chrome=149.0.7827.116)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d9f4ee9f245c4eef695447b0e884d066, clickElement {id=f.8C78AEF09070E54DB126A9643EA3D01E.d.2032381D26E4A85BED6BD95F30E11F97.e.99}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54696}, goog:processID: 2616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54696/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d9f4ee9f245c4eef695447b0e884d066)] -> xpath: //button[normalize-space()='Continue']]
+Session ID: d9f4ee9f245c4eef695447b0e884d066
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.AccountRegistrationPage.clickContinue(AccountRegistrationPage.java:86)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:16:11.327 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:16:11.327 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:16:11.478 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:16:11.986 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:16:12.352 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:19:08.090 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:19:08.352 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:19:10.772 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:19:10.802 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:19:11.056 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:19:11.630 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:19:13.240 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (961, 852)
+  (Session info: chrome=149.0.7827.116)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0c286999160958da7ea3e8102ce5992b, clickElement {id=f.AEF8EDD29578244C96141A23E8B64DF6.d.6B6559B2F070A57FA068B31D6566365F.e.97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53936}, goog:processID: 10748, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53936/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0c286999160958da7ea3e8102ce5992b)] -> xpath: //input[@name='agree']]
+Session ID: 0c286999160958da7ea3e8102ce5992b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.AccountRegistrationPage.setPrivacyPolicy(AccountRegistrationPage.java:81)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:19:15.773 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:19:15.774 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:19:16.057 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:19:17.006 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:19:17.457 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:20:05.853 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:20:06.084 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:20:08.416 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:20:08.439 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:20:08.623 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:20:09.054 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:20:19.964 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (2ccfab476d47568cb8cb2323404e1d04)] -> xpath: //input[@name='newsletter']]
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55583}, goog:processID: 13396, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55583/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ccfab476d47568cb8cb2323404e1d04
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at pageObjects.AccountRegistrationPage.setPrivacyPolicy(AccountRegistrationPage.java:71)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:20:22.305 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:20:22.305 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:20:22.433 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:20:23.099 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:20:23.499 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:20:51.758 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:20:51.999 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:20:54.344 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:20:54.368 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:20:54.543 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:20:55.026 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:20:55.577 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:20:56.662 [main] ERROR TC_AccountRegistrationTest - Test failed due to exception in execution flow
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1039, 849)
+  (Session info: chrome=149.0.7827.116)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b28d9bfdbd834c963f2756c22ac9cb3c, clickElement {id=f.458051D4895899D966942C642D885C9E.d.4BEA3495CAC700E3D9625C919FA57982.e.101}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.116, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\shubh\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64177}, goog:processID: 27304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64177/devtoo..., se:cdpVersion: 149.0.7827.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b28d9bfdbd834c963f2756c22ac9cb3c)] -> xpath: //button[normalize-space()='Continue']]
+Session ID: b28d9bfdbd834c963f2756c22ac9cb3c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.AccountRegistrationPage.clickContinue(AccountRegistrationPage.java:83)
+	at testCases.TC_AccountRegistrationTest.verifyAccountRegistration(TC_AccountRegistrationTest.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2026-06-26 16:20:59.065 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:20:59.066 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:20:59.224 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:20:59.740 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:21:00.271 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:21:49.228 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:21:49.457 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:21:51.766 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:21:51.786 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:21:51.957 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:21:52.441 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:21:53.201 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:21:53.304 [main] INFO  TC_AccountRegistrationTest - *** Verify the Account Registration Confirmation! ***
+2026-06-26 16:21:53.899 [main] INFO  TC_AccountRegistrationTest - Expected: Your Account Has Been Created!
+2026-06-26 16:21:53.899 [main] INFO  TC_AccountRegistrationTest - Actual: Your Account Has Been Created!
+2026-06-26 16:21:56.041 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:21:56.041 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:21:56.196 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:21:56.691 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:21:57.209 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:22:47.895 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:22:48.132 [main] INFO  Utils - [TestNG] Running:
+  D:\eclipse_Java\OpenCart\testng.xml
+
+2026-06-26 16:22:50.509 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:22:50.538 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:22:50.714 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:22:51.371 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:22:52.073 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:22:52.179 [main] INFO  TC_AccountRegistrationTest - *** Verify the Account Registration Confirmation! ***
+2026-06-26 16:22:52.594 [main] INFO  TC_AccountRegistrationTest - Expected: Your Account Has Been Created!
+2026-06-26 16:22:52.594 [main] INFO  TC_AccountRegistrationTest - Actual: Your Account Has Been Created!
+2026-06-26 16:22:54.618 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:22:54.618 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:22:54.748 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:22:55.210 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:22:55.585 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 16:56:10.015 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 16:56:13.457 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 16:56:13.484 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 16:56:13.683 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 16:56:14.154 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 16:56:14.872 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 16:56:14.982 [main] INFO  TC_AccountRegistrationTest - *** Verify the Account Registration Confirmation! ***
+2026-06-26 16:56:15.445 [main] INFO  TC_AccountRegistrationTest - Expected: Your Account Has Been Created!
+2026-06-26 16:56:15.445 [main] INFO  TC_AccountRegistrationTest - Actual: Your Account Has Been Created!
+2026-06-26 16:56:17.594 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 16:56:17.594 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 16:56:17.765 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 16:56:18.304 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 16:56:18.753 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 18:09:45.115 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 18:09:48.210 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 18:09:48.245 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 18:09:48.412 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 18:09:48.921 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 18:09:49.769 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 18:09:49.875 [main] INFO  TC_AccountRegistrationTest - *** Verify the Account Registration Confirmation! ***
+2026-06-26 18:09:50.329 [main] INFO  TC_AccountRegistrationTest - Expected: Your Account Has Been Created!
+2026-06-26 18:09:50.330 [main] INFO  TC_AccountRegistrationTest - Actual: Your Account Has Been Created!
+2026-06-26 18:09:52.452 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 18:09:52.453 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 18:09:52.609 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 18:09:53.206 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 18:09:53.736 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
+2026-06-26 18:23:21.824 [main] DEBUG TestNG - suiteXmlPath: "D:\eclipse_Java\OpenCart\testng.xml"
+2026-06-26 18:23:24.577 [main] INFO  TC_AccountRegistrationTest - ************ Execution Started TC_AccountRegistrationTest ******** 
+2026-06-26 18:23:24.600 [main] INFO  TC_AccountRegistrationTest - *** Click on My Account Link ***
+2026-06-26 18:23:24.799 [main] INFO  TC_AccountRegistrationTest - *** Click on Registration Link ***
+2026-06-26 18:23:25.329 [main] INFO  TC_AccountRegistrationTest - *** Fill the Registration form ***
+2026-06-26 18:23:26.173 [main] INFO  TC_AccountRegistrationTest - *** Click on the Continue button ***
+2026-06-26 18:23:26.291 [main] INFO  TC_AccountRegistrationTest - *** Verify the Account Registration Confirmation! ***
+2026-06-26 18:23:26.749 [main] INFO  TC_AccountRegistrationTest - Expected: Your Account Has Been Created!
+2026-06-26 18:23:26.749 [main] INFO  TC_AccountRegistrationTest - Actual: Your Account Has Been Created!
+2026-06-26 18:23:29.071 [main] INFO  TC_AccountLoginTest - ************ Execution Started TC_AccountLoginTest ******** 
+2026-06-26 18:23:29.071 [main] INFO  TC_AccountLoginTest - *** Click on My Account Link ***
+2026-06-26 18:23:29.263 [main] INFO  TC_AccountLoginTest - *** Click on Login Link ***
+2026-06-26 18:23:29.724 [main] INFO  TC_AccountLoginTest - *** Enter Valid Login Details ***
+2026-06-26 18:23:30.210 [main] INFO  TC_AccountLoginTest - *** Verify the user is successfully logged in..  ***
